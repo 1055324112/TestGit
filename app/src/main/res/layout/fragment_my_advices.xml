@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.jredu.newdemo.fragment.MyAdviceFragment">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/icon"/>
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feedbackbg1">
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="若您有任何问题或建议，记得反馈给我哟！您还可以通过QQ、微信号1992296902或kefu@bytedance.com与我们联系，获得更及时的客服服务~"
+            android:textSize="18sp"
+            android:textColor="#333"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text1"
+            android:text="2012-07-27 10:18"
+            android:layout_below="@+id/text"
+            android:paddingTop="10dp"
+            android:textSize="12sp"
+            android:textColor="#7b7979" />
+    </RelativeLayout>
+</RelativeLayout>

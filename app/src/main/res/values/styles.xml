@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/activityAnim</item>
+    </style>
+    <!--翻页动画-->
+    <style name="activityAnim" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/left_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/right_out</item>
+    </style>
+    <!--RadioGroup-->
+    <style name="tab">
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColor">@drawable/main_rb_textcolor</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="tab_home" parent="tab">
+        <item name="android:text">首页</item>
+        <item name="android:drawableTop">@drawable/home_tab_state</item>
+    </style>
+    <style name="tab_discover" parent="tab">
+        <item name="android:text">发现</item>
+        <item name="android:drawableTop">@drawable/discover_tab_state</item>
+    </style>
+    <style name="tab_audit" parent="tab">
+        <item name="android:text">审核</item>
+        <item name="android:drawableTop">@drawable/audit_tab_state</item>
+    </style>
+    <style name="tab_msg" parent="tab">
+        <item name="android:text">消息</item>
+        <item name="android:drawableTop">@drawable/msg_tab_state</item>
+    </style>
+
+    <!--popuwindow_close-->
+    <style name="popstyle">
+        <item name="android:windowEnterAnimation">@anim/enter</item>
+        <item name="android:windowExitAnimation">@anim/exit</item>
+    </style>
+</resources>
